@@ -40,51 +40,28 @@
 <!-- Search Container -->
 
   <div id="search-container">
-    <h1 class="text-center">Search Cocktails by Name:</h1>
+    <h1>Search Cocktails by Name:</h1>
         
         <form id="search-form">
             <input type="text" id="search" placeholder="Search...">
-            </div>
             
           
             <input type="hidden" id="type" value="name">
-
-<button type="submit" class="btn">GET COCKTAILS</button>
-            </div>
+            <br>
+            <button type="submit" class="btn">GET COCKTAILS</button>
         </form>
-        </div>
+        
+  </div>
 
 <!-- Results Container -->
 
     <div class="results results-container" style="display:none;" >
-    <h1 class="text-center">Results: <span id="total"></span></h1>
+    <h1 class="text-center">Results:</h1>
         <div id="results"></div>
                             
 </div>
 
-<!-- Old code
-<div id="search-container">
-    <h1 class="text-center">Search Cocktails by Name:</h1>
-        
-        <form id="search-form">
-            <input type="text" id="search" placeholder="Search...">
-            </div>
-            
-          
-            <input type="hidden" id="type" value="name">
-
-<button type="submit" class="btn">GET COCKTAILS</button>
-            </div>
-        </form>
-</div>
-
-<div class="results results-container" style="display:none;" >
-    <h1 class="text-center">Results: <span id="total"></span></h1>
-        <div id="results"></div>
-                            
-</div>
-
--->
+<!-- Recipe Modal -->
 
 <div id="recipe" class="modal">
   <div class="modal-box">
@@ -106,34 +83,6 @@
   <button class="favorite-btn">Favorite</button>
   
   </div>
-
-<!-- My Code 
-<div id="recipe" class="modal">
-  <div class="modal-box">
-    <div class="modal-inner">
-      <h2 class="modal-title"></h2>
-        <a class="modal-close-btn"><span aria-hidden="true">&times;</span></a>
-      </div>
-    <div class="modal-text">
-      <h3 class="alert alert-success">Preparation:</h3>
-      <div class="description-text mb-4"></div>
-
-      <h3 class="alert alert-success">Indregients:</h3>
-      <div class="ingredient-list">
-          <ul class="list-group"></ul>
-      </div>
-      <div class="ingredients">
-
-      </div>
-  
-    </div>
-    <div class="modal-buttons"><a type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info"></a></div>
-  </div>
-</div>
-
--->
-
-
 
 
 <script src="js/UI.js"></script>

@@ -202,7 +202,7 @@ function modal(e) {
 						var h = t.buttons || t.buttons != null ? e(r).text().length * 32 : 900;
 						u._modalHide(h < 900 ? 900 : h)
 					}
-					i.fadeIn(200, function(){
+					i.fadeIn(100, function(){
                         t.onShow != null ? t.onShow(u.actions) : null;
                     });
 					u._position();

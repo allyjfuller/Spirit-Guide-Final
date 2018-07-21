@@ -21,7 +21,7 @@
 
 		background-image: url('spirits.png');
     	background-repeat: no-repeat;
-    	background-attachment: fixed;
+    	background-attachment: relative;
     	background-position: top left;
 
 	}
@@ -69,7 +69,6 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1200px;
 		
 	}
 	
@@ -287,7 +286,7 @@
 	#banner
 	{
 		padding-top: 6em;
-		padding-left: 18em;
+		padding-left: 23em;
 		text-align: left;
 		
 		

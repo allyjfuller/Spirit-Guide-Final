@@ -35,73 +35,66 @@ class UI{
 
         drinks.forEach(drink => {
             resultsDiv.innerHTML += `
-             <div class="col-md-4">
-                <div class="card my-3">
-                <button type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info">
-                        +
-                        </button>
+                <div class="card">
                     <img class="card-img-top" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
                     <div class="card-body">
                         <h2 class="class-title text-center">${drink.strDrink}</h2>
                         <a data-target="#recipe" class="btn btn-success get-recipe" href="#recipe" rel="modal:open" data-id="${drink.idDrink}">Get Recipe</a>
-                        
-                            </div>
-                            </div>
                     </div>
+                    <button type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info">Favorite</button>
                 </div>
-             </div>
             `;
         })
         this.isFavorite();
     }
 
-    //Displays drinks with ingredients
-    displayDrinksWithIngredients(drinks){
-        //Show the Results
+    // //Displays drinks with ingredients
+    // displayDrinksWithIngredients(drinks){
+    //     //Show the Results
 
-        const resultsWrapper = document.querySelector('.results-container');
-        resultsWrapper.style.display = 'inline-block';
+    //     const resultsWrapper = document.querySelector('.results-container');
+    //     resultsWrapper.style.display = 'inline-block';
 
-        // Insert the results
+    //     // Insert the results
 
-        const resultsDiv = document.querySelector('#results');
-        drinks.forEach(drink =>{
-            resultsDiv.innerHTML += `
-                <div class="results-container">
-                    <div class="card my-3">
-                        <button type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info">
-                        +
-                        </button>
-                        <img class="card-img-top" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
-                        <div class="card-body">
-                            <h2 class="class-title text-center">${drink.strDrink}</h2>
-                            <p class="card-text font-weight-bold">Instructions :</p>
-                            <p class="card-text">
-                                ${drink.strInstructions}
-                            </p>
-                            <p class="card-text">
-                                <ul class="list-group">
-                                    <li class="list-group-item alert alert-danger">Ingredients : </li>
-                                    ${this.displayIngredients(drink)}
+    //     const resultsDiv = document.querySelector('#results');
+    //     drinks.forEach(drink =>{
+    //         resultsDiv.innerHTML += `
+    //             <div class="results-container">
+    //                 <div class="card my-3">
+    //                     <button type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info">
+    //                     +
+    //                     </button>
+    //                     <img class="card-img-top" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
+    //                     <div class="card-body">
+    //                         <h2 class="class-title text-center">${drink.strDrink}</h2>
+    //                         <p class="card-text font-weight-bold">Instructions :</p>
+    //                         <p class="card-text">
+    //                             ${drink.strInstructions}
+    //                         </p>
+    //                         <p class="card-text">
+    //                             <ul class="list-group">
+    //                                 <li class="list-group-item alert alert-danger">Ingredients : </li>
+    //                                 ${this.displayIngredients(drink)}
                                     
-                                </ul>
-                            </p>
-                            <p class="card-text font-weight-bold">Extra Information : </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-success">
-                                    ${drink.strAlcoholic}
-                                </span>
-                                <span class="badge badge-pill badge-warning">
-                                    Category: ${drink.strCategory}
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            `;
-        })
-        this.isFavorite();
-    }
+    //                             </ul>
+    //                         </p>
+    //                         <p class="card-text font-weight-bold">Extra Information : </p>
+    //                         <p class="card-text">
+    //                             <span class="badge badge-pill badge-success">
+    //                                 ${drink.strAlcoholic}
+    //                             </span>
+    //                             <span class="badge badge-pill badge-warning">
+    //                                 Category: ${drink.strCategory}
+    //                             </span>
+    //                         </p>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         `;
+    //     })
+    //     this.isFavorite();
+    // }
 
     //Prints the ingredients and measurements
     displayIngredients(drink){
