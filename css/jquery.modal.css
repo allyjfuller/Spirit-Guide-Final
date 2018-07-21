@@ -95,6 +95,7 @@
     display: inline-block;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 /* Modal Close Button */
 #modal-window .modal-box .modal-title .modal-close-btn {

@@ -97,19 +97,19 @@ function resultsDelegation(e){
         })
     }
 
-    //When favorite btn is clicked
+    //When favorite btn is cli
     if(e.target.classList.contains('favorite-btn')){
         if(e.target.classList.contains('is-favorite')){
             //remove class
             e.target.classList.remove('is-favorite');
-            e.target.textContent = '+';
+            e.target.textContent = 'Favorite';
 
             //Remove from local storage
             cocktailDB.removeFromDb(e.target.dataset.id);
         } else {
             //Add the class
             e.target.classList.add('is-favorite');
-            e.target.textContent = '-';
+            e.target.textContent = 'Remove';
 
             //Get Info
             const cardBody = e.target.parentElement;

@@ -126,7 +126,21 @@
 		font-family: 'Open Sans Condensed', sans-serif;
 		color: #FFF;
 	}
-	
+
+	a.btn {
+		display: inline-block;
+		padding: 1em 2em 1em 2em;
+		letter-spacing: 0.10em;
+		margin-top: 0.5em;
+		padding: 1.40em 3em;
+		background: #000;
+		border-radius: 6px;
+		text-decoration: none;
+		font-size: 1em;
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: #FFF;
+	}
+
 	.button-alt
 	{
 		padding: 1em 2em;
@@ -322,6 +336,30 @@
 		background-image: url("SGlogo.png");
 	}
 
+/*********************************************************************************/
+/* Favorites                                                                          */
+/*********************************************************************************/
+
+.container h1 {
+	text-align: center;
+}
+
+table {
+    display: table;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+table.table-light {
+	padding-top: 1em;
+	table-layout: fixed;
+	text-align: center;
+	width: 75%;
+}
+
+
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -393,12 +431,17 @@
 
 
 	div.card {
+		
 		display: block;
 		width: 30%;
 		padding-bottom: 1em;
 
+		text-align: center;
+
 
 	}
+
+	
 
 
 /*********************************************************************************/

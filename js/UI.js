@@ -39,9 +39,11 @@ class UI{
                     <img class="card-img-top" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
                     <div class="card-body">
                         <h2 class="class-title text-center">${drink.strDrink}</h2>
-                        <a data-target="#recipe" class="btn btn-success get-recipe" href="#recipe" rel="modal:open" data-id="${drink.idDrink}">Get Recipe</a>
                     </div>
-                    <button type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info">Favorite</button>
+                    <button type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info">
+                        Favorite
+                        </button>
+                        <a data-target="#recipe" class="btn btn-success get-recipe" href="#recipe" rel="modal:open" data-id="${drink.idDrink}">Get Recipe</a>
                 </div>
             `;
         })
@@ -150,7 +152,7 @@ class UI{
         `;
 
         //Insert before
-        const reference = document.querySelector('.jumbotron h1');
+        const reference = document.querySelector('h1');
         const parentNode = reference.parentElement;
         parentNode.insertBefore(div, reference);
 
@@ -179,7 +181,7 @@ class UI{
                 </td>
                 <td>${drink.name}</td>
                 <td>
-                    <a href="#" data-toggle="modal" data-target="#recipe" data-id="${drink.id}" class="btn btn-success get-recipe">
+                    <a href="#recipe" rel="modal:open" data-target="#recipe" data-id="${drink.id}" class="btn btn-success get-recipe">
                         View
                     </a>
                 </td>
@@ -212,7 +214,7 @@ class UI{
             let favoriteDrink = document.querySelector(`[data-id="${id}"]`);
             if(favoriteDrink){
                 favoriteDrink.classList.add('is-favorite');
-                favoriteDrink.textContent = '-';
+                favoriteDrink.textContent = 'Remove';
             }
         })
     }
