@@ -43,7 +43,10 @@ class UI{
                     <img class="card-img-top" src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
                     <div class="card-body">
                         <h2 class="class-title text-center">${drink.strDrink}</h2>
-                        <a data-target="#recipe" class="btn btn-success get-recipe" href="#" data-toggle="modal" data-id="${drink.idDrink}">Get Recipe</a>
+                        <a data-target="#recipe" class="btn btn-success get-recipe" href="#recipe" rel="modal:open" data-id="${drink.idDrink}">Get Recipe</a>
+                        
+                            </div>
+                            </div>
                     </div>
                 </div>
              </div>
@@ -129,8 +132,8 @@ class UI{
 
         //Get variable
         const modalTitle = document.querySelector(".modal-title"),
-              modalDescription = document.querySelector(".modal-body .description-text"),
-              modalIngrediants = document.querySelector(".modal-body .ingredient-list .list-group");
+              modalDescription = document.querySelector(".modal-text .description-text"),
+              modalIngrediants = document.querySelector(".modal-text .ingredient-list .list-group");
 
         //set the valiues
         modalTitle.innerHTML = recipe.strDrink;

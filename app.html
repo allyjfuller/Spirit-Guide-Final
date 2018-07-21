@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.modal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 </head>
 <body>
@@ -83,6 +85,56 @@
 </div>
 
 -->
+
+<div id="recipe" class="modal">
+  <div class="modal-box">
+    <div class="modal-inner">
+        <h2 class="modal-title"></h2>
+        <a class="modal-close-btn"></a>
+    </div>
+    <div class="modal-text">
+    <h3 class="alert alert-success">Preparation:</h3>
+    <div class="description-text mb-4"></div>
+
+    <h3 class="alert alert-success">Indregients:</h3>
+      <div class="ingredient-list">
+      <ul class="list-group"></ul>
+      </div>
+      <div class="ingredients">
+
+      </div>
+  <button class="favorite-btn">Favorite</button>
+  
+  </div>
+
+<!-- My Code 
+<div id="recipe" class="modal">
+  <div class="modal-box">
+    <div class="modal-inner">
+      <h2 class="modal-title"></h2>
+        <a class="modal-close-btn"><span aria-hidden="true">&times;</span></a>
+      </div>
+    <div class="modal-text">
+      <h3 class="alert alert-success">Preparation:</h3>
+      <div class="description-text mb-4"></div>
+
+      <h3 class="alert alert-success">Indregients:</h3>
+      <div class="ingredient-list">
+          <ul class="list-group"></ul>
+      </div>
+      <div class="ingredients">
+
+      </div>
+  
+    </div>
+    <div class="modal-buttons"><a type="button" data-id="${drink.idDrink}" class="favorite-btn btn btn-outline-info"></a></div>
+  </div>
+</div>
+
+-->
+
+
+
 
 <script src="js/UI.js"></script>
 <script src="js/CocktailAPI.js"></script>

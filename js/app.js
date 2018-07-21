@@ -71,11 +71,12 @@ function getCocktails(e){
                 ui.printMessage('There\'re no results, try a different term', 'danger');
             } else {
                 if(type === 'name'){
-                    //Display with ingrediants
-                    ui.displayDrinksWithIngredients(cocktails.cocktails.drinks);
-                } else {
                     //Display wihout ingrediants (category, alcohol, ingrediant)
                     ui.displayDrinks(cocktails.cocktails.drinks);
+                    
+                } else {
+                    //Display with ingrediants
+                    ui.displayDrinksWithIngredients(cocktails.cocktails.drinks);
 
                 }
             }
