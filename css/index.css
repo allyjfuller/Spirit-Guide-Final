@@ -187,7 +187,7 @@
 
 	.title
 	{
-		margin-bottom: 3em;
+		margin-bottom: 5em;
 	}
 	
 	.title h2
@@ -365,13 +365,13 @@
 /* Extra                                                                         */
 /*********************************************************************************/
 
-	#three-column
+	#two-column
 	{
 		text-align: center;
 		color: rgba(0,0,0,0.6);
 	}
 
-	#three-column .fa
+	#two-column .fa
 	{
 		display: block;
 		padding: 1em 0em;
@@ -379,15 +379,14 @@
 		font-size: 2em;
 	}
 	
-	#three-column .title h2
+	#two-column .title h2
 	{
 		font-weight: bold;
-		color: rgba(0,0,0,0.8);
+		
 	}
 
-	#three-column .title .byline
+	#two-column .title .byline
 	{
 		text-align: center;
-		color: rgba(0,0,0,.5);
 	}
 

@@ -1,4 +1,3 @@
-//i just removed fetch for ajax
 class CocktailAPI{
 
     // Get recipe by name
@@ -41,20 +40,6 @@ class CocktailAPI{
 
         return {
             recipe
-        }
-    }
-
-    //Retrieves all categories from REST API
-
-    async getCategories(){
-        const apiResponse = await $.getJSON('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list');
-
-        //wait for the response and return json
-
-        const categories = await apiResponse;
-
-        return{
-            categories
         }
     }
 
