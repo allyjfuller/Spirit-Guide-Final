@@ -1,4 +1,4 @@
-/*
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -43,51 +43,17 @@ body {
 }
 
 #banner .title h2 {
-    text-align: center;
-}
-
-
-
-}
-*/
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-title {
-    display: none;
-}
-
-body {
-    margin: auto;
-    max-width: 568px;
-    height: 100%;
-    background: #FFF;
-    display: flex;
-    justify-content: center;
-
-
-}
-
-
-
-#menu {
-    float: center;
-}
-
-#banner .title {
-    padding: 1em;
+	padding: 1em;
     margin: auto;
     text-align: center;
-
 }
-
 .container {
 
     display: flex;
     justify-content: center;
 
 }
+
+
+
 }
