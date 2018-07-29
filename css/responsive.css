@@ -3,8 +3,30 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+* {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #FFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16pt;
+	font-weight: 200;
+	color: #000;
+}
+
+
 
 }
