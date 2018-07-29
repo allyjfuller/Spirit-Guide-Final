@@ -1,8 +1,5 @@
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
 * {
     display: flex;
@@ -49,7 +46,8 @@ body {
 }
 .container {
 
-    display: flex;
+    display: block;
+	margin: auto;
     justify-content: center;
 
 }
