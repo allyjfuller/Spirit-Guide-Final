@@ -1,7 +1,7 @@
 @media only screen { 
-	  min-device-width: 375px
-	  max-device-width: 667px
-	  -webkit-min-device-pixel-ratio: 2
+	min-device-width: 320px; 
+  	max-device-width: 568px;
+	-webkit-min-device-pixel-ratio: 2;
 
 }	
 
