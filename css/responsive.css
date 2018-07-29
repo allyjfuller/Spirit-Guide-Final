@@ -9,23 +9,21 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
 
+title {
+    display: none;
+}
+
 html, body {
     height: 100%
-	    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 body {
-    
-	margin: 0px;
+    margin: auto;
     padding: 0px;
     background: #FFF;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -34,15 +32,18 @@ body {
 	color: #000;
 }
 
+#menu {
+    float: center;
+}
+
 #banner {
+    margin: auto;
     text-align: center;
 }
 
 #banner .title h2 {
     text-align: center;
 }
-
-
 
 
 
