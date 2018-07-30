@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -27,8 +27,7 @@ html, body {
 	}
 
 body {
-    margin: auto;
-    padding: 0px;
+    margin: 0 auto;
     background: #FFF;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16pt;
@@ -41,19 +40,19 @@ body {
 }
 
 #banner {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
 #banner .title h2 {
 	padding: 1em;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 .container {
 
     display: block;
-	margin: auto;
+	margin: 0 auto;
     justify-content: center;
 
 }
