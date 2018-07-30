@@ -20,6 +20,13 @@ html, body {
     height: 100%
 }
 
+.mobile-container {
+	margin: auto;
+	padding: 0;
+	align-items: center;
+	text-align: center;
+	}
+
 body {
     margin: auto;
     padding: 0px;
