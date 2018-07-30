@@ -46,7 +46,7 @@ body {
 }
 .container {
 
-    display: block;
+    display: inline-block;
 	margin: 0 auto;
     justify-content: center;
 
