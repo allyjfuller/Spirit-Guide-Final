@@ -1,25 +1,18 @@
 
-@media screen and (min-device-width: 320px) 
-and (max-device-width: 480px) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-#header-wrapper {
-    position: relative;
-    float: center;
-
+@media (max-width: 1000px) {
+.center{}
+.center-inner{left:25%;top:25%;position:absolute;width:50%;height:300px;background:#000;text-align:center;max-width:500px;max-height:500px;}
+}
+@media (min-width: 1000px) {
+.center{left:50%;top:25%;position:absolute;}
+.center-inner{width:500px;height:100%;margin-left:-250px;height:300px;background:#00;text-align:center;max-width:500px;max-height:500px;}
 }
 
-#banner .title {
-    text-align: center;
-
-}
-
-
-.container {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+	.container {
+		text-align: center;
+	}
 	
-}
+	.title {
+		display: inline-block;
+		zoom: 1
+	}
