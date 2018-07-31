@@ -1,57 +1,24 @@
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 480px) 
+and (-webkit-min-device-pixel-ratio: 2) {
 
-* {
-    display: flex;
+#header-wrapper {
+    position: relative;
+    float: center;
+
+}
+
+#banner .title {
+    text-align: center;
+
+}
+
+.container {
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-    margin: 0 auto;
-    box-sizing: border-box;
 }
-
-title {
-    display: none;
-}
-
-html, body {
-    height: 100%
-}
-
-
-body {
-    margin: 0 auto;
-    background: #FFF;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 16pt;
-	font-weight: 200;
-	color: #000;
-}
-
-#menu {
-    float: center;
-}
-
-#banner {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#banner .title h2 {
-	padding-left: 0px;
-    margin: 0 auto;
-    text-align: center;
-}
-.container {
-
-    display: block;
-	padding-left: 0px;
-margin: 0 auto;
-    justify-content: center;
-
-}
-
-
-
+	
 }
