@@ -1,4 +1,5 @@
 
+
 @media screen and (min-device-width: 320px) 
 and (max-device-width: 480px) 
 and (-webkit-min-device-pixel-ratio: 2) {
@@ -20,5 +21,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
     flex-wrap: wrap;
     justify-content: center;
 }
-	
+    
+#banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+#about {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#features {
+    width: 100%;
+    overflow: hidden;
+}
+
 }
