@@ -34,4 +34,35 @@ body {
 
 }
 
+input 
+    {
+        width: 100%;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px center; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+div #results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+
+table.table-light {
+    padding-top: 1em;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+
 }
