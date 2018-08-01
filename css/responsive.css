@@ -1,1 +1,24 @@
 
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 480px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+#header-wrapper {
+    position: relative;
+    float: center;
+
+}
+
+#banner .title {
+    text-align: center;
+
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+	
+}
