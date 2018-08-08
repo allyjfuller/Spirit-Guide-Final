@@ -1,11 +1,9 @@
-@media screen and (min-device-width: 320px) 
-and (max-device-width: 480px) 
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 1200px) {
    
 #banner {
     width: 100%;
     overflow: hidden;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 
 
@@ -34,6 +32,17 @@ body {
 
 }
 
+.container h1 {
+    text-align: center;
+    padding-left: 0.5em;
+}
+
+.title {
+    padding-left: 0.3em;
+    margin-bottom: 2em;
+}
+
+
 input 
     {
         width: 100%;
@@ -49,12 +58,53 @@ input
         padding: 12px 20px 12px 40px;
     }
 
-div #results {
+div #results, .container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
+        padding: 0.2em;
+}
+
+div.card {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+img {
+    max-width: 65%;
+    border-radius: 8px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 1em 2em 1em 2em;
+    letter-spacing: 0.10em;
+    margin-top: 0.5em;
+    padding: 22px 20px;
+    background: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #FFF;
+}
+
+button {
+    display: inline-block;
+    padding: 1em 2em 1em 2em;
+    letter-spacing: 0.10em;
+    margin-top: 0.5em;
+    padding: 22px 20px;
+    background: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #FFF;
 }
 
 table.table-light {
